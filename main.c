@@ -19,7 +19,6 @@ void insert_last(struct list **head,struct list **tail,int data)
 
 void print_list(struct list *head,int is_negative)
 {
-    // Remove leading zeros for clean output (unless the whole number is just 0)
     while(head!=NULL&&head->data==0&&head->next!=NULL)
     {
         struct list *temp=head;
@@ -112,7 +111,6 @@ int main(int argc,char *argv[])
     }
     else if(op=='-')
     {
-        // Equivalent to num1 + (-num2)
         sign2 = !sign2;
         if(sign1==sign2)
         {

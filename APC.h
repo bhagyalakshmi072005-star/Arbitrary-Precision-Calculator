@@ -1,6 +1,5 @@
 #ifndef APC_H
 #define APC_H
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -10,8 +9,6 @@ struct list
     struct list *next;
     struct list *prev;
 };
-
-// Function prototypes
 void insert_last(struct list **head,struct list **tail,int data);
 void print_list(struct list *head,int is_negative);
 void add_lists(struct list *tail1,struct list *tail2,struct list **res_head,struct list **res_tail);
